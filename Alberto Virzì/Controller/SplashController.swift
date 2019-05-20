@@ -13,6 +13,9 @@ class SplashController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //popolo il database
+        Database.creaEventiDiProva()
+        
         //controllo se c'è un utente connesso
         
         if LoginUtility.utenteConnesso == nil {
