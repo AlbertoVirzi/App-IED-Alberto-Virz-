@@ -22,6 +22,8 @@
 		1BADF3B722806EC600BF72A9 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */; };
 		1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B8228071C400BF72A9 /* DateUtility.swift */; };
 		1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */; };
+		1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */; };
+		1BBC30B02292F27500900DAF /* UIutility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AF2292F27500900DAF /* UIutility.swift */; };
 		1BC1EF332289A6AE007C4C9D /* OggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1EF322289A6AE007C4C9D /* OggettoAcquistabile.swift */; };
 		1BC1EF352289ADA8007C4C9D /* CellOggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1EF342289ADA8007C4C9D /* CellOggettoAcquistabile.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		1BADF3B8228071C400BF72A9 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
+		1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabbarController.swift; sourceTree = "<group>"; };
+		1BBC30AF2292F27500900DAF /* UIutility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIutility.swift; sourceTree = "<group>"; };
 		1BC1EF322289A6AE007C4C9D /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BC1EF342289ADA8007C4C9D /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 				1B86993D225B806200B82EAC /* OpenViewController.swift */,
 				1B869949225B9DC200B82EAC /* HomeController.swift */,
 				1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */,
+				1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				1B869941225B853D00B82EAC /* LoginUtility.swift */,
 				1BADF3B8228071C400BF72A9 /* DateUtility.swift */,
 				1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */,
+				1BBC30AF2292F27500900DAF /* UIutility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -216,12 +222,14 @@
 				1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */,
 				1BC1EF332289A6AE007C4C9D /* OggettoAcquistabile.swift in Sources */,
 				1B869944225B86E800B82EAC /* SplashController.swift in Sources */,
+				1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */,
 				1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */,
 				1BC1EF352289ADA8007C4C9D /* CellOggettoAcquistabile.swift in Sources */,
 				1B869942225B853D00B82EAC /* LoginUtility.swift in Sources */,
 				1B869948225B9AB900B82EAC /* CellEvento.swift in Sources */,
 				1B86994A225B9DC200B82EAC /* HomeController.swift in Sources */,
 				1B4D9BF62252641D006C4DDA /* LogInController.swift in Sources */,
+				1BBC30B02292F27500900DAF /* UIutility.swift in Sources */,
 				1B869946225B911C00B82EAC /* Evento.swift in Sources */,
 				1B86993E225B806200B82EAC /* OpenViewController.swift in Sources */,
 				1BADF3B722806EC600BF72A9 /* NetworkUtility.swift in Sources */,
