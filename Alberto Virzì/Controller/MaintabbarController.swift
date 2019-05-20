@@ -15,6 +15,8 @@ class MaintabbarController: UITabBarController {
 
         // Do any additional setup after loading the view.
         
+        tabBar.tintColor = UIColor.red
+        
         if let tabBarItems = tabBar.items {
             
             let dimensioniIcone = CGSize(width: 30.0, height: 30.0)

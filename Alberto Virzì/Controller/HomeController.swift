@@ -17,6 +17,8 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Lista Eventi"
 
         tableView.delegate = self
         tableView.dataSource = self

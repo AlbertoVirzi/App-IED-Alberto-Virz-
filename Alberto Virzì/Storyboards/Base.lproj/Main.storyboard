@@ -255,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="3882" y="-147"/>
         </scene>
-        <!--View Controller-->
+        <!--Mappa Controlle-->
         <scene sceneID="IL0-wN-HcE">
             <objects>
-                <viewController id="1Ow-TJ-3bR" sceneMemberID="viewController">
+                <viewController id="1Ow-TJ-3bR" customClass="MappaControlle" customModule="Alberto_Virzi_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojU-LD-pQl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,6 +277,9 @@
                         <viewLayoutGuide key="safeArea" id="rPd-nO-Yib"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yzo-P7-hwK"/>
+                    <connections>
+                        <outlet property="MapView" destination="Azk-P3-R1n" id="ee5-jd-OZJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88b-4t-sGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

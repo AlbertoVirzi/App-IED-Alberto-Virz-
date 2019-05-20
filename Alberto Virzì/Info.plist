@@ -45,5 +45,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Consenti all&apos;App di conoscere la tua posizione per visualizare gi eventi intorno a te.</string>
 </dict>
 </plist>
