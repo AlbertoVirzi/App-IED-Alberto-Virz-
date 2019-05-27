@@ -13,6 +13,7 @@
 		1B4D9BEE22524CFA006C4DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D9BEC22524CFA006C4DDA /* LaunchScreen.storyboard */; };
 		1B4D9BF62252641D006C4DDA /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D9BF52252641D006C4DDA /* LogInController.swift */; };
 		1B6DC8D3229C376500FBA0F8 /* LocationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DC8D2229C376500FBA0F8 /* LocationUtility.swift */; };
+		1B6DC8D6229C3DD400FBA0F8 /* IEDNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DC8D5229C3DD400FBA0F8 /* IEDNetworking.swift */; };
 		1B86993E225B806200B82EAC /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B86993D225B806200B82EAC /* OpenViewController.swift */; };
 		1B869940225B846300B82EAC /* Utente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B86993F225B846300B82EAC /* Utente.swift */; };
 		1B869942225B853D00B82EAC /* LoginUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B869941225B853D00B82EAC /* LoginUtility.swift */; };
@@ -41,6 +42,7 @@
 		1B4D9BEF22524CFA006C4DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4D9BF52252641D006C4DDA /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		1B6DC8D2229C376500FBA0F8 /* LocationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUtility.swift; sourceTree = "<group>"; };
+		1B6DC8D5229C3DD400FBA0F8 /* IEDNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEDNetworking.swift; sourceTree = "<group>"; };
 		1B86993D225B806200B82EAC /* OpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
 		1B86993F225B846300B82EAC /* Utente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utente.swift; sourceTree = "<group>"; };
 		1B869941225B853D00B82EAC /* LoginUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUtility.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1B4D9BE322524CF9006C4DDA /* AppDelegate.swift */,
+				1B6DC8D4229C3DB500FBA0F8 /* Network */,
 				1BC1EF392289BB92007C4C9D /* Utilities */,
 				1BC1EF382289BB26007C4C9D /* Models */,
 				1BC1EF372289BB0F007C4C9D /* Views */,
@@ -101,6 +104,14 @@
 				1B4D9BEF22524CFA006C4DDA /* Info.plist */,
 			);
 			path = "Alberto Virzì";
+			sourceTree = "<group>";
+		};
+		1B6DC8D4229C3DB500FBA0F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DC8D5229C3DD400FBA0F8 /* IEDNetworking.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		1BC1EF362289BAF7007C4C9D /* Controller */ = {
@@ -244,6 +255,7 @@
 				1B86994A225B9DC200B82EAC /* HomeController.swift in Sources */,
 				1B4D9BF62252641D006C4DDA /* LogInController.swift in Sources */,
 				1BBC30B22292FDFD00900DAF /* MappaControlle.swift in Sources */,
+				1B6DC8D6229C3DD400FBA0F8 /* IEDNetworking.swift in Sources */,
 				1BBC30B62293075400900DAF /* PinMappa.swift in Sources */,
 				1BBC30B02292F27500900DAF /* UIutility.swift in Sources */,
 				1B869946225B911C00B82EAC /* Evento.swift in Sources */,
