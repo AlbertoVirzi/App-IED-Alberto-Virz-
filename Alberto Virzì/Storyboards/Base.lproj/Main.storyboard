@@ -266,19 +266,44 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Azk-P3-R1n">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5p-EG-tgT" customClass="UIButton">
+                                <rect key="frame" x="303" y="80" width="56" height="56"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-lD-Dxf">
+                                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="4zO-Rw-yNF"/>
+                                            <constraint firstAttribute="height" constant="24" id="Vd9-Ac-jR9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oeW-lD-Dxf" firstAttribute="leading" secondItem="O5p-EG-tgT" secondAttribute="leading" constant="16" id="HtX-Xu-L7q"/>
+                                    <constraint firstItem="oeW-lD-Dxf" firstAttribute="top" secondItem="O5p-EG-tgT" secondAttribute="top" constant="16" id="cNu-QX-nWY"/>
+                                    <constraint firstAttribute="bottom" secondItem="oeW-lD-Dxf" secondAttribute="bottom" constant="16" id="dKJ-pg-Tpj"/>
+                                    <constraint firstAttribute="trailing" secondItem="oeW-lD-Dxf" secondAttribute="trailing" constant="16" id="xF8-Zi-XSz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonCentraPosizioneUtente:" destination="1Ow-TJ-3bR" eventType="touchUpInside" id="Ekt-eP-hWa"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Azk-P3-R1n" firstAttribute="top" secondItem="rPd-nO-Yib" secondAttribute="top" id="G73-V3-8gz"/>
+                            <constraint firstItem="O5p-EG-tgT" firstAttribute="top" secondItem="rPd-nO-Yib" secondAttribute="top" constant="16" id="Iw2-OD-NlC"/>
                             <constraint firstItem="rPd-nO-Yib" firstAttribute="trailing" secondItem="Azk-P3-R1n" secondAttribute="trailing" id="m9x-cH-wr5"/>
                             <constraint firstItem="rPd-nO-Yib" firstAttribute="bottom" secondItem="Azk-P3-R1n" secondAttribute="bottom" id="q3O-Wn-opy"/>
                             <constraint firstItem="Azk-P3-R1n" firstAttribute="leading" secondItem="rPd-nO-Yib" secondAttribute="leading" id="rhh-HZ-E1Q"/>
+                            <constraint firstItem="rPd-nO-Yib" firstAttribute="trailing" secondItem="O5p-EG-tgT" secondAttribute="trailing" constant="16" id="sMm-xT-gnL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rPd-nO-Yib"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yzo-P7-hwK"/>
                     <connections>
                         <outlet property="MapView" destination="Azk-P3-R1n" id="ee5-jd-OZJ"/>
+                        <outlet property="buttonCentraPosizioneUtente" destination="O5p-EG-tgT" id="jnX-mz-C30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88b-4t-sGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -432,6 +457,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="distanzaEvento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-kV-DT4">
+                                <rect key="frame" x="104" y="133" width="255" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UHb-rJ-ER2"/>
@@ -441,6 +473,7 @@
                         <outlet property="collectionView" destination="WJ9-Eb-mUR" id="NMi-q5-ZOd"/>
                         <outlet property="imageCopertina" destination="4Z4-fC-1af" id="iRS-mJ-uvI"/>
                         <outlet property="labelData" destination="OWi-3d-SvI" id="pHS-nh-9l9"/>
+                        <outlet property="labelDistanza" destination="WWY-kV-DT4" id="pBi-pV-eGI"/>
                         <outlet property="labelNome" destination="tqH-HL-6X9" id="yi7-RN-lij"/>
                         <outlet property="textDescrizione" destination="E4D-ga-geL" id="2a1-yJ-AHm"/>
                     </connections>
@@ -590,8 +623,9 @@
     <resources>
         <image name="Background2" width="324" height="640"/>
         <image name="logo App" width="2033" height="2032"/>
+        <image name="navigation" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="axW-Pe-FNV"/>
+        <segue reference="Ne7-8C-cvz"/>
     </inferredMetricsTieBreakers>
 </document>

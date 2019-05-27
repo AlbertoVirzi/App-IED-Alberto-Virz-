@@ -17,9 +17,16 @@ class PinMappa: NSObject, MKAnnotation {
     var subtitle: String?
     var coordinate = CLLocationCoordinate2D()
     
+    //Variabile utilizzata per risalire facilmente all'evento associato
+    var eventoAssociato: Evento?
+    
     convenience init(conEvento evento: Evento) {
         
+        //Funzione init semplificata per gli eventi
         self.init()
+        
+        //Tengo un riferimento all'evento utilizzato per la creazione del pin
+        eventoAssociato = evento
         
         //Copio i dati dell'evento
         title = evento.nome

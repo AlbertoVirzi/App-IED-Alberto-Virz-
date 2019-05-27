@@ -43,4 +43,9 @@ class UIutility {
         return newImage!
     }
     
+    static func arrotondaAngoliCerchio(_ view: UIView) {
+        view.layer.cornerRadius = view.frame.size.height / 2.0
+        view.layer.masksToBounds = true
+    }
+    
 }

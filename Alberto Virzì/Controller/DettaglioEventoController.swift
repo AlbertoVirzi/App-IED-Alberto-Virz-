@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
 class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     //Questo è l'evento da rappresentare sullo schermo
     var evento: Evento?
+    
+    //La posizione dell'utente connesso
+    var miaPosizione: CLLocation?
 
     //MARK: - Outlets
     
@@ -26,6 +30,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var labelDistanza: UILabel!
     
     
     
@@ -53,7 +58,18 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         
         labelData.text = DateUtility.stringa(conData: evento.data, formato: "dd/MM/yyyy")
         
-       textDescrizione.text = evento.descrizione
+        textDescrizione.text = evento.descrizione
+        
+        //
+        if let distanza = LocationUtility.distanza(da: evento.coordinate, a: miaPosizione?.coordinate){
+            
+            //Scrivo la distanza sul label
+            let distanzaInChilometri = distanza / 1000.0
+            let stringaDistanza = String(format: "%.1f", distanzaInChilometri)
+            labelDistanza.text = "Levento è a \(stringaDistanza) km da te"
+            
+            
+        }
         
         
     }
