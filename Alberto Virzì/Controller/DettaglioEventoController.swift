@@ -32,10 +32,15 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     
     @IBOutlet weak var labelDistanza: UILabel!
     
+    @IBOutlet weak var labelTemperatura: UILabel!
+    @IBOutlet weak var labelTemperaturaDescrizione: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Check meteo Roma
+        //Network.richiestaMeteoEvento(evento)
 
         // Do any additional setup after loading the view.
         
@@ -67,6 +72,28 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
             let distanzaInChilometri = distanza / 1000.0
             let stringaDistanza = String(format: "%.1f", distanzaInChilometri)
             labelDistanza.text = "Levento è a \(stringaDistanza) km da te"
+            
+            
+        }
+        
+        labelTemperatura.text = "Caricamento Meteo "
+        labelTemperaturaDescrizione.text = "Caricamento Meteo "
+        
+        Network.richiestaMeteoEvento(evento) {
+            
+            //Questa
+            (meteo) in
+            
+            if let temperatura = meteo?.temperatura{
+                
+                if let descrizione = meteo?.descrizione {
+                    
+                    self.labelTemperatura.text = "\(temperatura)"
+                    self.labelTemperaturaDescrizione.text = "\(descrizione)"
+                    
+                }
+                
+            }
             
             
         }

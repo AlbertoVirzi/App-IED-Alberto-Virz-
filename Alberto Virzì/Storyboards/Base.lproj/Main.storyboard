@@ -323,7 +323,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqH-HL-6X9">
-                                <rect key="frame" x="104" y="80" width="255" height="20"/>
+                                <rect key="frame" x="104" y="80" width="138" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -458,7 +458,21 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="distanzaEvento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-kV-DT4">
-                                <rect key="frame" x="104" y="133" width="255" height="21"/>
+                                <rect key="frame" x="104" y="139" width="128" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-gV-qPt">
+                                <rect key="frame" x="240" y="80" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tempdescrizione" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i58-Dt-YSW">
+                                <rect key="frame" x="240" y="139" width="119" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -475,6 +489,8 @@
                         <outlet property="labelData" destination="OWi-3d-SvI" id="pHS-nh-9l9"/>
                         <outlet property="labelDistanza" destination="WWY-kV-DT4" id="pBi-pV-eGI"/>
                         <outlet property="labelNome" destination="tqH-HL-6X9" id="yi7-RN-lij"/>
+                        <outlet property="labelTemperatura" destination="aQa-gV-qPt" id="WXK-VC-Lvb"/>
+                        <outlet property="labelTemperaturaDescrizione" destination="i58-Dt-YSW" id="aR7-WQ-HjZ"/>
                         <outlet property="textDescrizione" destination="E4D-ga-geL" id="2a1-yJ-AHm"/>
                     </connections>
                 </viewController>

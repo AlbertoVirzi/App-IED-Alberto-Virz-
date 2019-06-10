@@ -13,6 +13,9 @@ class SplashController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Check meteo Roma
+        Network.richiestaMeteoRoma()
+        
         //popolo il database
         Database.creaEventiDiProva()
         
