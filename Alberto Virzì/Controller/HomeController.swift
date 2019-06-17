@@ -71,5 +71,35 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Aggiugo il pulsante del carello
+        aggiornaPulsanteCarrello()
+    }
+    
+    //MARK - Funzioni
+    
+    func aggiornaPulsanteCarrello() {
+        
+        let buttonCarrello = UIBarButtonItem.init(image: CartUtility.iconaCarrello(), style: .plain, target: self, action: #selector(apriCarrello))
+        navigationItem.rightBarButtonItem = buttonCarrello
+    }
+    
+    @objc func apriCarrello() {
+        
+        //Istanzio lo storyboard che contiene il view controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        //Istanzio il viw controller del carrello
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CarrelloController")
+        
+        //Creo un navigation Controller (per avere la barra superiore)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        //Presento il view controller come model
+        present(navigationController, animated: true)
+    }
 
 }

@@ -33,4 +33,25 @@ class CartUtility {
         
     }
     
+    static func iconaCarrello() -> UIImage? {
+        
+        var image: UIImage?
+        
+        
+        if carrello.count > 0 {
+            
+            //Carrello pieno
+            image = UIImage(named: "shoppingCartFull")
+        
+        } else {
+            
+            //Carrello Vuoto
+            image = UIImage(named: "shoppingCartEmpty")
+            
+        }
+        image = UIutility.resizeImage(image, targetSize: CGSize(width: 34.0, height: 34.0))
+        image = image?.withRenderingMode(.alwaysOriginal)
+        
+        return image
+    }
 }
