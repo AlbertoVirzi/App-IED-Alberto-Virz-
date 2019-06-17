@@ -35,6 +35,9 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var labelTemperatura: UILabel!
     @IBOutlet weak var labelTemperaturaDescrizione: UILabel!
     
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +55,9 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         //Questa serve per communicare con la collectionView
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        //UI
+        mapButton.setTitle(" ", for: .normal)
         
     }
     
@@ -98,6 +104,27 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
             
         }
         
+        //Metto il pin sulla mappa
+        
+        //Creo il pin
+        let pin = PinMappa.init(conEvento:evento)
+        
+        //lo aggiungo sulla mappa
+        mapView.addAnnotation(pin)
+        
+        //Centro sul Pin
+        if let coordinate = evento.coordinate {
+            
+            //Centro e zoomo con la camera
+            let camera = mapView.camera
+            camera.centerCoordinate = coordinate
+            camera.altitude = 500
+            mapView.setCamera(camera, animated: true)
+            //mapView.setCenter(coordinate, animated: true)
+        
+        }
+        
+        mapView.showsUserLocation = true
         
     }
     
@@ -132,6 +159,23 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         return CGSize(width: larghezza, height: altezza)
         
     }
-
+    
+    //MARK - ACTION
+    @IBAction func mapButton(_ sender: Any) {
+        
+        alertUtility.mostraAlertDiConferma(conTitolo: "Vuoi navigare verso l'evento", messaggio: evento?.indirizzo, viewController: self) { (sceltaUtente) in
+            
+            if sceltaUtente{
+                
+                //L'utente ha scelto si
+                LocationUtility.navigaVerso(evento: self.evento)
+                
+            }
+            
+        }
+        //LocationUtility.navigaVerso(evento: evento)
+        
+    }
+    
 
 }

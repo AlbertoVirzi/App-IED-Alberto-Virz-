@@ -27,6 +27,7 @@
 		1BADF3B722806EC600BF72A9 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */; };
 		1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B8228071C400BF72A9 /* DateUtility.swift */; };
 		1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */; };
+		1BBBE53F22B7DDE20001564D /* alertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE53E22B7DDE20001564D /* alertUtility.swift */; };
 		1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */; };
 		1BBC30B02292F27500900DAF /* UIutility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AF2292F27500900DAF /* UIutility.swift */; };
 		1BBC30B22292FDFD00900DAF /* MappaControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30B12292FDFD00900DAF /* MappaControlle.swift */; };
@@ -59,6 +60,7 @@
 		1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		1BADF3B8228071C400BF72A9 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
+		1BBBE53E22B7DDE20001564D /* alertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertUtility.swift; sourceTree = "<group>"; };
 		1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabbarController.swift; sourceTree = "<group>"; };
 		1BBC30AF2292F27500900DAF /* UIutility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIutility.swift; sourceTree = "<group>"; };
 		1BBC30B12292FDFD00900DAF /* MappaControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaControlle.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */,
 				1BBC30AF2292F27500900DAF /* UIutility.swift */,
 				1B6DC8D2229C376500FBA0F8 /* LocationUtility.swift */,
+				1BBBE53E22B7DDE20001564D /* alertUtility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				1B6DC8D6229C3DD400FBA0F8 /* IEDNetworking.swift in Sources */,
 				1B2FE19022AE9255009BE588 /* Network.swift in Sources */,
 				1BBC30B62293075400900DAF /* PinMappa.swift in Sources */,
+				1BBBE53F22B7DDE20001564D /* alertUtility.swift in Sources */,
 				1B2FE19222AEA6EA009BE588 /* Meteo.swift in Sources */,
 				1BBC30B02292F27500900DAF /* UIutility.swift in Sources */,
 				1B869946225B911C00B82EAC /* Evento.swift in Sources */,

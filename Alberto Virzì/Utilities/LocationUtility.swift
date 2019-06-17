@@ -21,14 +21,7 @@ class LocationUtility {
             
         }
         
-        guard CLLocationCoordinate2DIsValid(da), CLLocationCoordinate2DIsValid(a) else {
-            
-            //Condizione non valida
-            return nil
-            
-        }
-        
-        guard da.latitude != 0.0, da.longitude != 0.0, a.latitude != 0.0, a.longitude != 0.0 else {
+        guard controlloCoordinate(da), controlloCoordinate(a) else {
             
             //Condizione non valida
             return nil
@@ -40,6 +33,52 @@ class LocationUtility {
         let locationA = CLLocation(latitude: a.latitude, longitude: a.longitude)
         
         return locationDa.distance(from: locationA)
+        
+    }
+    
+    //avvia la navigazione con la mappa di sistema
+    static func navigaVerso(evento: Evento?) {
+        
+        guard let coordinate = evento?.coordinate, controlloCoordinate(coordinate) else {
+            return
+        }
+        
+        //Passo le coordinate agli oggetti di sistema per le mappe
+        let placemark = MKPlacemark.init(coordinate: coordinate)
+        
+        let item = MKMapItem.init(placemark: placemark)
+        item.name = evento?.nome
+        
+        item.openInMaps(launchOptions: nil)
+        
+    }
+    
+    //Restituisce true se le coordinate passate sono valide
+    static func controlloCoordinate(_ coordinate: CLLocationCoordinate2D?) -> Bool {
+        
+        //Controllo che i dati passati siano validi
+        guard let coordinate = coordinate else {
+            
+            //Condizione non valida
+            return false
+            
+        }
+        
+        guard CLLocationCoordinate2DIsValid(coordinate) else {
+            
+            //Condizione non valida
+            return false
+            
+        }
+        
+        guard coordinate.latitude != 0.0, coordinate.longitude != 0.0 else {
+            
+            //Condizione non valida
+            return false
+            
+        }
+        
+        return true
         
     }
 
