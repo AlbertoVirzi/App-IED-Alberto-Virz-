@@ -48,4 +48,10 @@ class UIutility {
         view.layer.masksToBounds = true
     }
     
+    static func arrotondaAngoli(_ view: UIView, raggio: CGFloat)
+    {
+        view.layer.cornerRadius = raggio
+        view.layer.masksToBounds = true
+    }
+    
 }

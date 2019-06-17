@@ -28,6 +28,9 @@
 		1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B8228071C400BF72A9 /* DateUtility.swift */; };
 		1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */; };
 		1BBBE53F22B7DDE20001564D /* alertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE53E22B7DDE20001564D /* alertUtility.swift */; };
+		1BBBE54122B7FA700001564D /* CartUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54022B7FA700001564D /* CartUtility.swift */; };
+		1BBBE54422B805E00001564D /* suonoDiAcquisto.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BBBE54322B805E00001564D /* suonoDiAcquisto.wav */; };
+		1BBBE54922B807DE0001564D /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54822B807DE0001564D /* Sound.swift */; };
 		1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */; };
 		1BBC30B02292F27500900DAF /* UIutility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AF2292F27500900DAF /* UIutility.swift */; };
 		1BBC30B22292FDFD00900DAF /* MappaControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30B12292FDFD00900DAF /* MappaControlle.swift */; };
@@ -61,6 +64,9 @@
 		1BADF3B8228071C400BF72A9 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
 		1BBBE53E22B7DDE20001564D /* alertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertUtility.swift; sourceTree = "<group>"; };
+		1BBBE54022B7FA700001564D /* CartUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartUtility.swift; sourceTree = "<group>"; };
+		1BBBE54322B805E00001564D /* suonoDiAcquisto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = suonoDiAcquisto.wav; sourceTree = "<group>"; };
+		1BBBE54822B807DE0001564D /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabbarController.swift; sourceTree = "<group>"; };
 		1BBC30AF2292F27500900DAF /* UIutility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIutility.swift; sourceTree = "<group>"; };
 		1BBC30B12292FDFD00900DAF /* MappaControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaControlle.swift; sourceTree = "<group>"; };
@@ -102,11 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				1B4D9BE322524CF9006C4DDA /* AppDelegate.swift */,
+				1BBBE54522B807210001564D /* Framework */,
 				1B6DC8D4229C3DB500FBA0F8 /* Network */,
 				1BC1EF392289BB92007C4C9D /* Utilities */,
 				1BC1EF382289BB26007C4C9D /* Models */,
 				1BC1EF372289BB0F007C4C9D /* Views */,
 				1BC1EF362289BAF7007C4C9D /* Controller */,
+				1BBBE54222B805A60001564D /* resources */,
 				1BC1EF3A2289BBC1007C4C9D /* Storyboards */,
 				1B4D9BEA22524CFA006C4DDA /* Assets.xcassets */,
 				1B4D9BEF22524CFA006C4DDA /* Info.plist */,
@@ -122,6 +130,22 @@
 				1B2FE19322AEA775009BE588 /* NetworkParser.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1BBBE54222B805A60001564D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BBBE54322B805E00001564D /* suonoDiAcquisto.wav */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		1BBBE54522B807210001564D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				1BBBE54822B807DE0001564D /* Sound.swift */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		1BC1EF362289BAF7007C4C9D /* Controller */ = {
@@ -168,6 +192,7 @@
 				1BBC30AF2292F27500900DAF /* UIutility.swift */,
 				1B6DC8D2229C376500FBA0F8 /* LocationUtility.swift */,
 				1BBBE53E22B7DDE20001564D /* alertUtility.swift */,
+				1BBBE54022B7FA700001564D /* CartUtility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -240,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4D9BEE22524CFA006C4DDA /* LaunchScreen.storyboard in Resources */,
+				1BBBE54422B805E00001564D /* suonoDiAcquisto.wav in Resources */,
 				1B4D9BEB22524CFA006C4DDA /* Assets.xcassets in Resources */,
 				1B4D9BE922524CF9006C4DDA /* Main.storyboard in Resources */,
 			);
@@ -256,8 +282,10 @@
 				1B4D9BE422524CF9006C4DDA /* AppDelegate.swift in Sources */,
 				1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */,
 				1BC1EF332289A6AE007C4C9D /* OggettoAcquistabile.swift in Sources */,
+				1BBBE54122B7FA700001564D /* CartUtility.swift in Sources */,
 				1B869944225B86E800B82EAC /* SplashController.swift in Sources */,
 				1B6DC8D3229C376500FBA0F8 /* LocationUtility.swift in Sources */,
+				1BBBE54922B807DE0001564D /* Sound.swift in Sources */,
 				1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */,
 				1BBC30B42293032700900DAF /* Database.swift in Sources */,
 				1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */,

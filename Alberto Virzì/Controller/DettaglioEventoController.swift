@@ -38,6 +38,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapButton: UIButton!
     
+    @IBOutlet weak var buttonAcquistaBiglietto: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,9 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         
         //UI
         mapButton.setTitle(" ", for: .normal)
+        
+        //
+        UIutility.arrotondaAngoli(buttonAcquistaBiglietto,raggio: 6.0)
         
     }
     
@@ -141,6 +145,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         let cella = collectionView.dequeueReusableCell(withReuseIdentifier: "CellOggettoAcquistabile", for: indexPath) as! CellOggettoAcquistabile
         
         let oggetto = evento?.oggettiAcquistabili?[indexPath.item]
+        
         cella.setupConOggettoAcquistabile(oggetto)
         
         return cella
@@ -160,6 +165,23 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //Prendo l'oggetto d'array di acquistabili del collection view
+        guard let oggetto = evento?.oggettiAcquistabili?[indexPath.item] else {
+            return
+        }
+        
+        //1 Mostriamo l'alert di conferma
+        alertUtility.mostraAlertDiConferma(conTitolo: "Vuoi Acquistarlo", messaggio: oggetto.nome, viewController: self) { (sceltaUtente) in
+            if sceltaUtente {
+                
+                //2 Se l'utente accetta lo aggiungiamo al carrello
+                CartUtility.aggiungiAlCarrello(oggetto)
+            }
+        }
+        
+    }
+    
     //MARK - ACTION
     @IBAction func mapButton(_ sender: Any) {
         
@@ -174,6 +196,12 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
             
         }
         //LocationUtility.navigaVerso(evento: evento)
+        
+    }
+    //Acquista il biglietto in evento
+    @IBAction func buttonAcquistaBiglietto(_ sender: Any) {
+        
+        
         
     }
     
