@@ -20,6 +20,10 @@ class Utente {
     
     var avatarUrl: String?
     
+    var dataNascita: String?
+    
+    var citta: String?
+    
 }
 
     

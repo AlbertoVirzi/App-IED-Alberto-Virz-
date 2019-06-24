@@ -41,9 +41,17 @@ class NetworkParser {
     static func parsUtente(conData data: IEDDictionary) -> Utente? {
         
         let utente = Utente()
-        
-        
-        
+    
+        //Traduzione dei dati inviati dal server
+
+        utente.email = data["email"] as? String
+        utente.nome = data["nome"] as? String
+        utente.cognome = data["cognome"] as? String
+        utente.avatarUrl = data["avatar_url"] as? String
+        utente.dataNascita = data["data_nascita"] as? String
+        utente.citta = data["citta"] as? String
+
+
         return utente
         
     }

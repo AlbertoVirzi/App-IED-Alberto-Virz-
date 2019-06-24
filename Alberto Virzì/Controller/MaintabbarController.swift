@@ -31,7 +31,7 @@ class MaintabbarController: UITabBarController {
                 itemHome.image = UIutility.resizeImage(image, targetSize: dimensioniIcone)
                 
             }
-            //Home
+            //Mappa
             if tabBarItems.count >= 2 {
                 
                 let itemMap = tabBarItems[1]
@@ -41,7 +41,16 @@ class MaintabbarController: UITabBarController {
                 itemMap.image = UIutility.resizeImage(image, targetSize: dimensioniIcone)
                 
             }
-            
+            //Utente
+            if tabBarItems.count >= 3 {
+                
+                let itemUtente = tabBarItems[2]
+                
+                itemUtente.title = "Utente"
+                let image  = UIImage(named: "user")
+                itemUtente.image = UIutility.resizeImage(image, targetSize: dimensioniIcone)
+                
+            }
             
             
         }

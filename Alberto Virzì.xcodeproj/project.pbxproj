@@ -24,6 +24,7 @@
 		1B869946225B911C00B82EAC /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B869945225B911C00B82EAC /* Evento.swift */; };
 		1B869948225B9AB900B82EAC /* CellEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B869947225B9AB900B82EAC /* CellEvento.swift */; };
 		1B86994A225B9DC200B82EAC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B869949225B9DC200B82EAC /* HomeController.swift */; };
+		1B91310622C1495600B8C33F /* utenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91310522C1495600B8C33F /* utenteController.swift */; };
 		1BADF3B722806EC600BF72A9 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */; };
 		1BADF3B9228071C400BF72A9 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3B8228071C400BF72A9 /* DateUtility.swift */; };
 		1BADF3BB228087A700BF72A9 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */; };
@@ -62,6 +63,7 @@
 		1B869945225B911C00B82EAC /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		1B869947225B9AB900B82EAC /* CellEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEvento.swift; sourceTree = "<group>"; };
 		1B869949225B9DC200B82EAC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		1B91310522C1495600B8C33F /* utenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utenteController.swift; sourceTree = "<group>"; };
 		1BADF3B622806EC600BF72A9 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		1BADF3B8228071C400BF72A9 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		1BADF3BA228087A700BF72A9 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */,
 				1BBC30B12292FDFD00900DAF /* MappaControlle.swift */,
 				1BBBE55022B817D60001564D /* CarrelloController.swift */,
+				1B91310522C1495600B8C33F /* utenteController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				1B869942225B853D00B82EAC /* LoginUtility.swift in Sources */,
 				1B869948225B9AB900B82EAC /* CellEvento.swift in Sources */,
 				1B86994A225B9DC200B82EAC /* HomeController.swift in Sources */,
+				1B91310622C1495600B8C33F /* utenteController.swift in Sources */,
 				1B2FE19422AEA775009BE588 /* NetworkParser.swift in Sources */,
 				1B4D9BF62252641D006C4DDA /* LogInController.swift in Sources */,
 				1BBC30B22292FDFD00900DAF /* MappaControlle.swift in Sources */,
