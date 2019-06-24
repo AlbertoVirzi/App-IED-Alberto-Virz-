@@ -38,4 +38,14 @@ class NetworkParser {
         
     }
     
+    static func parsUtente(conData data: IEDDictionary) -> Utente? {
+        
+        let utente = Utente()
+        
+        
+        
+        return utente
+        
+    }
+    
 }

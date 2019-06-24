@@ -91,4 +91,56 @@ class Network {
         
     }
     
+    //Funzione
+    typealias CompletionLogin = ((Utente?) -> Void)
+    static func richiestaLogin(conEmail email: String?, password: String?, completion: CompletionLogin?) {
+        
+        //Controllo la validita dei dati
+        guard let email = email, let password = password else {
+            //Dati non validi
+            completion?(nil)
+            return
+        }
+        
+        //indirizzo del servizio web da richiamare
+        let url = "http://ied.apptoyou.it/app/login.php"
+        
+        //Parametri da passare al servizio
+        var parametri = IEDDictionary()
+        parametri["email"] = email
+        parametri["password"] = password
+        
+        //Effetua la chiamata al serizio web
+        IEDNetworking.jsonPost(url: url, authToken: nil, parameters: parametri) { (risposta) in
+            //Questa parte di codice viene eseguita quando l'app riceve la risposta dal server
+            if risposta.success {
+                
+                //Controllo se il server ha inviato i dati che mi aspettavo
+                if let data = risposta.data as? IEDDictionary {
+                    
+                   //Controlla se ci sonoi dati ell'utente
+                    if let datiUtente = data["data"] as? IEDDictionary{
+                    
+                        //Login Riuscito
+                        //Parse della risposta
+                        let utente = NetworkParser.parsUtente(conData: datiUtente)
+                        
+                        //Restituisci l'oggetto alla funzione chiamata
+                        completion?(utente)
+                        
+                        return
+                    }
+                    
+                }
+                
+            }
+                
+            //Login Fallito
+            completion?(nil)
+
+                    
+        }
+        
+    }
+    
 }

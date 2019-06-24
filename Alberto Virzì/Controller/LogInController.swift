@@ -38,21 +38,57 @@ class LogInController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Funzioni
+    
+    private func controllaValiditaDatiInseriti() -> Bool {
+        
+        //Controllo il campo dell'email
+        if textEmail.text == nil || textEmail.text == "" {
+            alertUtility.mostraAlert(conTitolo: "Errore", messaggio: "Devi specificare l'email", viewController: self)
+            return false
+            
+        }
+        //Controllo il campo della password
+        if textPassword.text == nil || textPassword.text == "" {
+            alertUtility.mostraAlert(conTitolo: "Errore", messaggio: "Devi specificare la password", viewController: self)
+            return false
+            
+        }
+        
+        //Tutto ok
+        return true
+        
+    }
+    
     
     //MARK: - Actions
     
     @IBAction func button(_ sender: Any) {
         
-        if textEmail.text == "nome@gmail" {
+        guard controllaValiditaDatiInseriti() else {
+            //Dati non validi
+            return
+        }
+        
+        print("Dati Validi")
+        Network.richiestaLogin(conEmail: textEmail.text, password: textPassword.text) { (utente) in
             
-            if textPassword.text == "password" {
+            if let utente = utente {
                 
-                print("accesso eseguito");
+               //login riuscito
+                print("login riuscito")
                 
-                performSegue(withIdentifier: "vaiAllaHome", sender: self)
+                //Salvo l'utente in memoria
+                LoginUtility.utenteConnesso = utente
+                
+                //Vado alla schermata principale dell'app
+                self.performSegue(withIdentifier: "vaiAllaHome", sender: self)
+            } else{
+                
+                //login fallito
+                alertUtility.mostraAlert(conTitolo: "Errore", messaggio: "Login Fallito", viewController: self)
                 
             }
-            
         }
         
     }

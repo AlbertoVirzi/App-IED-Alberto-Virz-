@@ -47,4 +47,16 @@ class alertUtility {
         
     }
     
+    static func mostraAlert(conTitolo titolo: String?, messaggio: String?, viewController: UIViewController?) {
+        
+        //1 Creo l'alert
+        let alert = UIAlertController.init(title: titolo, message: messaggio, preferredStyle: .alert)
+        //2 Creo l'azione del tasto si
+        let actionChiudi = UIAlertAction(title: "Chiudi", style: .default)
+        //2B Aggiungo l'azione all'alert
+        alert.addAction(actionChiudi)
+        //Mostra l'alert
+        viewController?.present(alert, animated: true)
+    }
+    
 }
