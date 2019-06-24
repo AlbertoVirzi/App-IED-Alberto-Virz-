@@ -37,7 +37,7 @@ class CarrelloController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellCarrello") as! CellaView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellCarrello") as! CellCarrello
         
         let oggetto = CartUtility.carrello[indexPath.row]
         cell.setupConOggettoAcquistabile(oggetto)

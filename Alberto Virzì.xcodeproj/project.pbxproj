@@ -31,7 +31,7 @@
 		1BBBE54122B7FA700001564D /* CartUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54022B7FA700001564D /* CartUtility.swift */; };
 		1BBBE54422B805E00001564D /* suonoDiAcquisto.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BBBE54322B805E00001564D /* suonoDiAcquisto.wav */; };
 		1BBBE54922B807DE0001564D /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54822B807DE0001564D /* Sound.swift */; };
-		1BBBE54F22B816D50001564D /* CellaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54E22B816D50001564D /* CellaView.swift */; };
+		1BBBE54F22B816D50001564D /* CellCarrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE54E22B816D50001564D /* CellCarrello.swift */; };
 		1BBBE55122B817D60001564D /* CarrelloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE55022B817D60001564D /* CarrelloController.swift */; };
 		1BBC30AE2292EEAA00900DAF /* MaintabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */; };
 		1BBC30B02292F27500900DAF /* UIutility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC30AF2292F27500900DAF /* UIutility.swift */; };
@@ -69,7 +69,7 @@
 		1BBBE54022B7FA700001564D /* CartUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartUtility.swift; sourceTree = "<group>"; };
 		1BBBE54322B805E00001564D /* suonoDiAcquisto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = suonoDiAcquisto.wav; sourceTree = "<group>"; };
 		1BBBE54822B807DE0001564D /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		1BBBE54E22B816D50001564D /* CellaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellaView.swift; sourceTree = "<group>"; };
+		1BBBE54E22B816D50001564D /* CellCarrello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCarrello.swift; sourceTree = "<group>"; };
 		1BBBE55022B817D60001564D /* CarrelloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrelloController.swift; sourceTree = "<group>"; };
 		1BBC30AD2292EEAA00900DAF /* MaintabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabbarController.swift; sourceTree = "<group>"; };
 		1BBC30AF2292F27500900DAF /* UIutility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIutility.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			children = (
 				1B869947225B9AB900B82EAC /* CellEvento.swift */,
 				1BC1EF342289ADA8007C4C9D /* CellOggettoAcquistabile.swift */,
-				1BBBE54E22B816D50001564D /* CellaView.swift */,
+				1BBBE54E22B816D50001564D /* CellCarrello.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 				1B2FE19022AE9255009BE588 /* Network.swift in Sources */,
 				1BBC30B62293075400900DAF /* PinMappa.swift in Sources */,
 				1BBBE53F22B7DDE20001564D /* alertUtility.swift in Sources */,
-				1BBBE54F22B816D50001564D /* CellaView.swift in Sources */,
+				1BBBE54F22B816D50001564D /* CellCarrello.swift in Sources */,
 				1B2FE19222AEA6EA009BE588 /* Meteo.swift in Sources */,
 				1BBC30B02292F27500900DAF /* UIutility.swift in Sources */,
 				1B869946225B911C00B82EAC /* Evento.swift in Sources */,
