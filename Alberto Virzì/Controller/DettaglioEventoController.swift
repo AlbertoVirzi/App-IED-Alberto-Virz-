@@ -67,7 +67,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     
     func setupConEvento(_ evento: Evento) {
         
-        NetworkUtility.downloadImmagine(indirizzoWeb: evento.copertinaUrl, perImageView: imageCopertina)
+        NetworkUtility.downloadImmagine(indirizzoWeb: evento.immagineUrl, perImageView: imageCopertina)
         
         labelNome.text = evento.nome
         
@@ -170,16 +170,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         guard let oggetto = evento?.oggettiAcquistabili?[indexPath.item] else {
             return
         }
-        
-        //1 Mostriamo l'alert di conferma
-        alertUtility.mostraAlertDiConferma(conTitolo: "Vuoi Acquistarlo", messaggio: oggetto.nome, viewController: self) { (sceltaUtente) in
-            if sceltaUtente {
-                
-                //2 Se l'utente accetta lo aggiungiamo al carrello
-                CartUtility.aggiungiAlCarrello(oggetto)
-            }
-        }
-        
+        chiediConfermaAcquisto(oggetto: oggetto)
     }
     
     //MARK - ACTION
@@ -201,8 +192,20 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
     //Acquista il biglietto in evento
     @IBAction func buttonAcquistaBiglietto(_ sender: Any) {
         
+        chiediConfermaAcquisto(oggetto: evento!)
         
+    }
+    
+    func chiediConfermaAcquisto(oggetto: OggettoAcquistabile){
         
+        //1 Mostriamo l'alert di conferma
+        alertUtility.mostraAlertDiConferma(conTitolo: "Vuoi Acquistarlo", messaggio: oggetto.nome, viewController: self) { (sceltaUtente) in
+            if sceltaUtente {
+                
+                //2 Se l'utente accetta lo aggiungiamo al carrello
+                CartUtility.aggiungiAlCarrello(oggetto)
+            }
+        }
     }
     
 

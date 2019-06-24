@@ -35,7 +35,7 @@ class CellEvento: UITableViewCell {
             labelPrezzo.text = "gratis"
         }
         //metto l'imagine sulla cell
-        NetworkUtility.downloadImmagine(indirizzoWeb: evento.copertinaUrl, perImageView: imageCopertina)
+        NetworkUtility.downloadImmagine(indirizzoWeb: evento.immagineUrl, perImageView: imageCopertina)
         
         //Metto la data
         labelData.text = DateUtility.stringa(conData: evento.data, formato: "dd/MM/yyyy")

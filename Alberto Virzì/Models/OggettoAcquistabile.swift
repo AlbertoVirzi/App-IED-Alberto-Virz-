@@ -8,7 +8,17 @@
 
 import UIKit
 
-class OggettoAcquistabile {
+class OggettoAcquistabile: Comparable {
+    static func < (lhs: OggettoAcquistabile, rhs: OggettoAcquistabile) -> Bool {
+        return (lhs.id ?? 0) < (rhs.id ?? 0)
+    }
+    
+    static func == (lhs: OggettoAcquistabile, rhs: OggettoAcquistabile) -> Bool {
+        //Confronto i nomi perche gli oggetti acquistabili non hannoo un id valorizzato
+        return lhs.nome == rhs.nome
+        //return lhs.id == rhs.id
+    }
+    
     
     var id: Int?
     

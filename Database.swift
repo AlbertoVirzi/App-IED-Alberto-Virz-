@@ -21,7 +21,7 @@ class Database {
         uno.indirizzo = "Via Alcamo 11, Roma, Italy"
         uno.data = DateUtility.stringa(conStringa: "02/03/2019" , formato: "dd/MM/yyyy" )
         uno.prezzo = 55.0
-        uno.copertinaUrl = "https://images.unsplash.com/photo-1521391406205-4a6af174a4c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1675&q=80"
+        uno.immagineUrl = "https://images.unsplash.com/photo-1521391406205-4a6af174a4c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1675&q=80"
         
         let latitudineUno = 41.54
         let longitudineUno = 12.28
@@ -47,7 +47,7 @@ class Database {
         due.indirizzo = "Via Casilina 15, Roma, Italy"
         due.data = Date()
         due.prezzo = 75.0
-        due.copertinaUrl = "https://images.unsplash.com/photo-1513791053024-3b50799fdd7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
+        due.immagineUrl = "https://images.unsplash.com/photo-1513791053024-3b50799fdd7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
         
         //Creo un oggetto acquistabile
         
@@ -68,7 +68,7 @@ class Database {
         tre.indirizzo = "Via Casilina 15, Roma, Italy"
         tre.data = Date()
         tre.prezzo = 75.0
-        tre.copertinaUrl = "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+        tre.immagineUrl = "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
         
         eventi.append(tre)
     }

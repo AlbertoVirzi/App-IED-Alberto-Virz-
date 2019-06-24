@@ -54,4 +54,14 @@ class CartUtility {
         
         return image
     }
+    
+    //Funzione che rimuove articoli dal carrelo
+    static func rimuoviDalCarrello (_ oggetto: OggettoAcquistabile) {
+        
+        if let index = carrello.index(of: oggetto ) {
+            carrello.remove(at: index)
+        }
+        
+    }
+    
 }
