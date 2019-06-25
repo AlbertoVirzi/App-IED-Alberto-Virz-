@@ -41,7 +41,7 @@ class CartUtility {
         if carrello.count > 0 {
             
             //Carrello pieno
-            image = UIImage(named: "shoppingCartFull")
+            image = UIImage(named: "cart")
         
         } else {
             

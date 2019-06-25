@@ -50,10 +50,10 @@ class CarrelloController: UIViewController, UITableViewDelegate, UITableViewData
         if CartUtility.carrello.count > 0 {
             //Carrello pieno
             let numeroArticoli = CartUtility.carrello.count
-             navigationItem.title = "Carrello \(numeroArticoli)"
+             navigationItem.title = "Carrello (\(numeroArticoli))"
         } else {
             //Carrello vuoto
-             navigationItem.title = "Carrello"
+             navigationItem.title = "Carrello Vuoto"
         }
         
         //Messaggio nessun articolo nel carrello

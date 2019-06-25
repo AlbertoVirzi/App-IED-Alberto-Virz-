@@ -32,6 +32,7 @@ class SplashController: UIViewController {
             performSegue(withIdentifier: "dallaHome", sender: self)
         }
         
+        
     }
 
 

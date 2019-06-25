@@ -75,14 +75,12 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         
         textDescrizione.text = evento.descrizione
         
-        //
         if let distanza = LocationUtility.distanza(da: evento.coordinate, a: miaPosizione?.coordinate){
             
             //Scrivo la distanza sul label
             let distanzaInChilometri = distanza / 1000.0
             let stringaDistanza = String(format: "%.1f", distanzaInChilometri)
             labelDistanza.text = "Levento è a \(stringaDistanza) km da te"
-            
             
         }
         

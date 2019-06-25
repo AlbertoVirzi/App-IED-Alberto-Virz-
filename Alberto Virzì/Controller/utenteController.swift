@@ -21,6 +21,7 @@ class utenteController: UIViewController {
     override func viewDidLoad() {
         
         setupUtente();
+        UIutility.arrotondaAngoliCerchio(avatarImmage)
         
     }
     

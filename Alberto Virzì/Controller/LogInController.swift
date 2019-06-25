@@ -24,16 +24,12 @@ class LogInController: UIViewController {
         super.viewDidLoad()
         
         //Arrotonda textEmail
-        textEmail.layer.cornerRadius = textEmail.frame.size.height / 2.0;
-        textEmail.layer.masksToBounds = true
-        
+        UIutility.arrotondaAngoli(textEmail, raggio: 6)
+ 
         //Arrotonda textPassword
-        textPassword.layer.cornerRadius = textPassword.frame.size.height / 2.0;
-        textPassword.layer.masksToBounds = true
-        
-        //Arrotonda buttonAccedi
-        buttonAccedi.layer.cornerRadius = buttonAccedi.frame.size.height / 2.0;
-        buttonAccedi.layer.masksToBounds = true
+        UIutility.arrotondaAngoli(textPassword, raggio: 6)
+
+
         
         // Do any additional setup after loading the view.
     }

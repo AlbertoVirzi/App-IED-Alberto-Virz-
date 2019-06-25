@@ -34,6 +34,7 @@ class LocationUtility {
         
         return locationDa.distance(from: locationA)
         
+        
     }
     
     //avvia la navigazione con la mappa di sistema
