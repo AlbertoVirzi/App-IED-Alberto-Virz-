@@ -21,6 +21,8 @@ class OpenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIutility.arrotondaAngoli(regitrati_button, raggio: 3.0)
+        
         
         // Do any additional setup after loading the view.
     }

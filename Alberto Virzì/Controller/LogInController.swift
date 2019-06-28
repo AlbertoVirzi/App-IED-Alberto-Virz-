@@ -24,10 +24,10 @@ class LogInController: UIViewController {
         super.viewDidLoad()
         
         //Arrotonda textEmail
-        UIutility.arrotondaAngoli(textEmail, raggio: 6)
+        UIutility.arrotondaAngoli(textEmail, raggio: 3)
  
         //Arrotonda textPassword
-        UIutility.arrotondaAngoli(textPassword, raggio: 6)
+        UIutility.arrotondaAngoli(textPassword, raggio: 3)
 
 
         

@@ -61,7 +61,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
         mapButton.setTitle(" ", for: .normal)
         
         //
-        UIutility.arrotondaAngoli(buttonAcquistaBiglietto,raggio: 6.0)
+        UIutility.arrotondaAngoli(buttonAcquistaBiglietto,raggio: 3.0)
         
     }
     

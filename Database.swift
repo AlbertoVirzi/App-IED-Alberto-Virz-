@@ -11,7 +11,7 @@ import MapKit
 
 class Database {
     
-    //Lista di eventi raggiungibili daogni parte dell'app
+    //Lista di eventi raggiungibili da ogni parte dell'app
     static var eventi: [Evento] = []
     
     static func creaEventiDiProva() {
@@ -32,7 +32,7 @@ class Database {
         let oggettoUno = OggettoAcquistabile()
         
         oggettoUno.immagineUrl = "https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-        oggettoUno.nome = "Biglietto"
+        oggettoUno.nome = "Video Lezioni"
         oggettoUno.disponibilita = 1
         oggettoUno.prezzo = 999.99
         
@@ -49,6 +49,10 @@ class Database {
         due.prezzo = 75.0
         due.immagineUrl = "https://images.unsplash.com/photo-1513791053024-3b50799fdd7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
         
+        let latitudineDue = 44.00
+        let longitudineDue = 13.00
+        due.coordinate = CLLocationCoordinate2D.init(latitude: latitudineDue, longitude: longitudineDue)
+        
         //Creo un oggetto acquistabile
         
         let oggettoDue = OggettoAcquistabile()
@@ -57,8 +61,6 @@ class Database {
         oggettoDue.nome = "Maglietta"
         oggettoDue.disponibilita = 2
         oggettoDue.prezzo = 1
-        
-        uno.oggettiAcquistabili = [oggettoUno, oggettoDue]
         
         eventi.append(due)
         
@@ -70,7 +72,16 @@ class Database {
         tre.prezzo = 75.0
         tre.immagineUrl = "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
         
+        let latitudineTre = 43.00
+        let longitudineTre = 12.50
+        tre.coordinate = CLLocationCoordinate2D.init(latitude: latitudineTre, longitude: longitudineTre)
+        
         eventi.append(tre)
+        
+        uno.oggettiAcquistabili = [oggettoUno, oggettoDue]
+        due.oggettiAcquistabili = [oggettoUno, oggettoDue]
+        tre.oggettiAcquistabili = [oggettoUno, oggettoDue]
+        
     }
     
 }
