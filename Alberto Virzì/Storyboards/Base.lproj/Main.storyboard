@@ -92,7 +92,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-RQ-8Nh">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-RQ-8Nh">
                                 <rect key="frame" x="16" y="471" width="343" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,7 +118,7 @@
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UeZ-7l-PQ2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="FMy-oc-PYD">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="FMy-oc-PYD">
                                 <rect key="frame" x="16" y="378" width="343" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -623,7 +623,7 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <state key="normal" title="Acquista il Biglietto">
-                                                            <color key="titleColor" red="0.84313725490000002" green="0.24313725489999999" blue="0.010184151785714286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonAcquistaBiglietto:" destination="qy8-kt-Msb" eventType="touchUpInside" id="J28-Vt-w8g"/>
@@ -936,6 +936,6 @@
         <image name="navigation" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ne7-8C-cvz"/>
+        <segue reference="axW-Pe-FNV"/>
     </inferredMetricsTieBreakers>
 </document>

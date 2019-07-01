@@ -202,6 +202,7 @@ class DettaglioEventoController: UIViewController, UICollectionViewDelegate, UIC
                 
                 //2 Se l'utente accetta lo aggiungiamo al carrello
                 CartUtility.aggiungiAlCarrello(oggetto)
+                print()
             }
         }
     }
